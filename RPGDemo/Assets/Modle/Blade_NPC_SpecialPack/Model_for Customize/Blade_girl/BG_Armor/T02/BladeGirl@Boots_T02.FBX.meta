@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 2583d7a71ba9e1a49b27de7c7f36b714
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Gilr_Boots_T02
+    100004: L_side01
+    100006: L_side02
+    100008: L_side03
+    100010: L_side_end
+    100012: Particle VADSiew 01
+    100014: Particle VieADw 01
+    100016: Particle VieDSw 01
+    100018: Particle View 01
+    100020: Particle View 01 1
+    100022: Particle View 01 2
+    100024: Particle View 01 3
+    100026: Particle View 0ASD1
+    100028: R_side01
+    100030: R_side02
+    100032: R_side03
+    100034: R_side_end
+    400000: //RootNode
+    400002: Gilr_Boots_T02
+    400004: L_side01
+    400006: L_side02
+    400008: L_side03
+    400010: L_side_end
+    400012: Particle VADSiew 01
+    400014: Particle VieADw 01
+    400016: Particle VieDSw 01
+    400018: Particle View 01
+    400020: Particle View 01 1
+    400022: Particle View 01 2
+    400024: Particle View 01 3
+    400026: Particle View 0ASD1
+    400028: R_side01
+    400030: R_side02
+    400032: R_side03
+    400034: R_side_end
+    2300000: Gilr_Boots_T02
+    3300000: Gilr_Boots_T02
+    4300000: Gilr_Boots_T02
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Defaultdfret11
+    second: {fileID: 2100000, guid: abb3664ac3e1fa24994e0738619d8708, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
