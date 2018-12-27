@@ -61,15 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Blade_NPC_SpecialPack\scripts\characterButtonGirl.cs" />
-    <Compile Include="Assets\Blade_NPC_SpecialPack\scripts\characterButtonGirlChibi.cs" />
-    <Compile Include="Assets\Blade_NPC_SpecialPack\scripts\characterButtonGirlCos.cs" />
-    <Compile Include="Assets\Blade_NPC_SpecialPack\scripts\characterButtonWarrior.cs" />
-    <Compile Include="Assets\Blade_NPC_SpecialPack\scripts\characterButtonWarriorChibi.cs" />
-    <Compile Include="Assets\Blade_NPC_SpecialPack\scripts\characterButtonWarriorCos.cs" />
-    <Compile Include="Assets\Blade_NPC_SpecialPack\scripts\MaterialChange.cs" />
-    <None Include="Assets\Blade_NPC_SpecialPack\Shader\Unlit_2Side.shader" />
-    <None Include="Assets\Blade_NPC_SpecialPack\ReadMe_V1.4 ver_1_28.txt" />
+    <Compile Include="Assets\Project_HT\Code\Script\Config.cs" />
+    <Compile Include="Assets\Project_HT\Code\Script\MeunScene\UISelect.cs" />
+    <None Include="Assets\Modle\Blade_NPC_SpecialPack\Shader\Unlit_2Side.shader" />
+    <None Include="Assets\Modle\Blade_NPC_SpecialPack\ReadMe_V1.4 ver_1_28.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Gitub/Demo_HT_v1/RPGDemo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -276,6 +271,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Software/Unity/Unity2018.2.2/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>D:/Gitub/Demo_HT_v1/RPGDemo/Assets/Plugins/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/hhhxt/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
