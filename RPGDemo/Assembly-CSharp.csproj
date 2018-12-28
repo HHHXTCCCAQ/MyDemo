@@ -63,8 +63,13 @@
   <ItemGroup>
     <Compile Include="Assets\Project_HT\Code\Script\Config.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\MeunScene\UISelect.cs" />
+    <Compile Include="Assets\Project_HT\Code\Script\ObjPool.cs" />
+    <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState.cs" />
     <None Include="Assets\Modle\Blade_NPC_SpecialPack\Shader\Unlit_2Side.shader" />
     <None Include="Assets\Modle\Blade_NPC_SpecialPack\ReadMe_V1.4 ver_1_28.txt" />
+    <None Include="Assets\Modle\CartoonMonsters\shaders\2sided_transparent_cutout.shader" />
+    <None Include="Assets\Modle\CartoonMonsters\shaders\2sided_transparent.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Gitub/Demo_HT_v1/RPGDemo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

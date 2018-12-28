@@ -63,6 +63,9 @@
   <ItemGroup>
     <Compile Include="Assets\Project_HT\Code\Editor\GetUIPath.cs" />
     <Compile Include="Assets\Project_HT\Code\Editor\UIInfo.cs" />
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>D:/Gitub/Demo_HT_v1/RPGDemo/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Gitub/Demo_HT_v1/RPGDemo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
