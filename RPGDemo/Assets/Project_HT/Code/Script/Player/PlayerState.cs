@@ -14,6 +14,7 @@ public class PlayerState : MonoBehaviour {
     public enum PLAYERSTATE
     {
         IDLE,
+        ATTACKSTANDY,
         WALK,
         RUN,
         ATTACK_ONE,
