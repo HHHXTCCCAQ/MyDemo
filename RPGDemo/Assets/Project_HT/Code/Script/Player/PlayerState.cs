@@ -17,6 +17,7 @@ public class PlayerState : MonoBehaviour {
         ATTACKSTANDY,
         WALK,
         RUN,
+        JUMP,
         ATTACK_ONE,
         ATTACK_TWO,
         ATTACK_THREE,

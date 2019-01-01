@@ -7,4 +7,5 @@ using UnityEngine;
 public class Config
 {
     public static string SceneName = "Level_one";
+    public static PlayerState PlayerState;
 }

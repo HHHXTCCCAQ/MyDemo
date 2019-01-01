@@ -10,14 +10,28 @@ public class IdleState : BaseState
     public IdleState(SetState setState)
     {
         _setState = setState;
+        Debug.Log("Idle 状态。。。。。");
         //TODO 更新状态
     }
 
     public void AnimationChange()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        switch (Config.PlayerState.State)
         {
-            Debug.Log("C");
+            case PlayerState.PLAYERSTATE.RUN:
+                _setState.SetNewState(new RunState(_setState));
+                //TODO 播放动画
+                break;
+            case PlayerState.PLAYERSTATE.JUMP:
+                _setState.SetNewState(new JumpState(_setState));
+                //TODO 设置状态 播放动画
+                break;
+            case PlayerState.PLAYERSTATE.DIE:
+                break;
+            case PlayerState.PLAYERSTATE.HIT:
+                break;
+            default:
+                break;
         }
     }
 
@@ -28,3 +42,4 @@ public class IdleState : BaseState
     }
 
 }
+

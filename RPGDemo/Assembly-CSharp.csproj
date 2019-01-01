@@ -69,6 +69,8 @@
     <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState\BaseState.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState\IdleState.cs" />
+    <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState\JumpState.cs" />
+    <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState\RunState.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState\SetAnimation.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\Player\PlayerState\SetState.cs" />
     <None Include="Assets\Modle\Blade_NPC_SpecialPack\Shader\Unlit_2Side.shader" />

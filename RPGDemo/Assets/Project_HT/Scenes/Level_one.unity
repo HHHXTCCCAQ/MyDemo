@@ -942,7 +942,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 170667164}
-  - component: {fileID: 170667163}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -950,18 +949,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &170667163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170667162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ef052d90a6627543922523527a5b6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setAnimation: {fileID: 0}
 --- !u!4 &170667164
 Transform:
   m_ObjectHideFlags: 0
@@ -10933,6 +10920,7 @@ GameObject:
   - component: {fileID: 1635133316}
   - component: {fileID: 1635133318}
   - component: {fileID: 1635133319}
+  - component: {fileID: 1635133320}
   m_Layer: 0
   m_Name: Player_Girl
   m_TagString: Untagged
@@ -11065,6 +11053,17 @@ CapsuleCollider:
   m_Height: 1.9053555
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &1635133320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635133313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef052d90a6627543922523527a5b6eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1637136688
 Prefab:
   m_ObjectHideFlags: 0
