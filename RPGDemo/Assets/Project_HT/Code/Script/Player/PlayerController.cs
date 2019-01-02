@@ -6,9 +6,7 @@ using UnityEngine;
 //Created By HeXiaoTao
 public class PlayerController : MonoBehaviour
 {
-    //public SetAnimation setAnimation;
     public SetState setState;
-    // Use this for initialization
     void Start()
     {
         Config.PlayerState = GetComponent<PlayerState>();
