@@ -20,12 +20,8 @@ public class AttackStandyState : BaseState
             case PlayerState.PLAYERSTATE.IDLE:
                 break;
             case PlayerState.PLAYERSTATE.ATTACK_ONE:
+                _setState.SetNewState(new AttackCombolOne(_setState));
                 //TODO 播放动画
-                break;
-            case PlayerState.PLAYERSTATE.ATTACK_TWO:
-                //TODO 设置状态 播放动画
-                break;
-            case PlayerState.PLAYERSTATE.ATTACK_THREE:
                 break;
             case PlayerState.PLAYERSTATE.ATTACKRUN:
                 break;

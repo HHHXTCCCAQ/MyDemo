@@ -10915,12 +10915,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1635133315}
-  - component: {fileID: 1635133314}
   - component: {fileID: 1635133317}
   - component: {fileID: 1635133316}
   - component: {fileID: 1635133318}
   - component: {fileID: 1635133319}
   - component: {fileID: 1635133320}
+  - component: {fileID: 1635133314}
   m_Layer: 0
   m_Name: Player_Girl
   m_TagString: Untagged
@@ -10928,59 +10928,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!111 &1635133314
-Animation:
+--- !u!95 &1635133314
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 111201182179557738, guid: d9e1e20faafa9e543be9fd250c7b88e5,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1635133313}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d025fde5f96169e4687517a55bd25b2e, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 840b943bd8108e24484fab350fd1e73e, type: 3}
-  - {fileID: 7400000, guid: 0795f0634a850464c9ab25847760a299, type: 3}
-  - {fileID: 7400000, guid: f4038a8b9e2a9c84e843f5d3a6e85e1b, type: 3}
-  - {fileID: 7400000, guid: 0bd50848eb9d4a14eb058ce43cd4e4ad, type: 3}
-  - {fileID: 7400000, guid: 338265a5754b686478453f226ee6d77c, type: 3}
-  - {fileID: 7400000, guid: 13788726ca14698468de75087e80d66d, type: 3}
-  - {fileID: 7400000, guid: 5fa95e54658a7a147802cd54184fe90d, type: 3}
-  - {fileID: 7400000, guid: de43d0c67e1a1d4439d7f3c1de19ad9f, type: 3}
-  - {fileID: 7400000, guid: 23d870b11fa5d454895c59cd4d53cd1f, type: 3}
-  - {fileID: 7400000, guid: d414c7e30eba3424aa10940efbc62cce, type: 3}
-  - {fileID: 7400000, guid: aa4d4c51442973d41a6559132193a708, type: 3}
-  - {fileID: 7400000, guid: d5e889abbc3f6e94898fe5c31b84b67e, type: 3}
-  - {fileID: 7400000, guid: 8892d966b02fd9d4192db4790a67be78, type: 3}
-  - {fileID: 7400000, guid: a778f649e10afe74188ad943d2852878, type: 3}
-  - {fileID: 7400000, guid: 5b77a7d907caf4a4db4bf78f554ac879, type: 3}
-  - {fileID: 7400000, guid: 78695d584207edf468f4eee1345a3ee4, type: 3}
-  - {fileID: 7400000, guid: d025fde5f96169e4687517a55bd25b2e, type: 3}
-  - {fileID: 7400000, guid: 70c7670029d72c649bbcce5db0cdbbbd, type: 3}
-  - {fileID: 7400000, guid: ff06cf89c1cad0242b58ee17cb5a3573, type: 3}
-  - {fileID: 7400000, guid: 0a13c10594a490f44a7abac83050e24f, type: 3}
-  - {fileID: 7400000, guid: b9cf3a07ae819c84d854a5f902684db9, type: 3}
-  - {fileID: 7400000, guid: c32762cf9b1de5c47a21887e19bb2922, type: 3}
-  - {fileID: 7400000, guid: 8cb6b8e4746e7b9448ddac2790ba181d, type: 3}
-  - {fileID: 7400000, guid: d1efce3e3c10b4a4796a70aac2bcaa5e, type: 3}
-  - {fileID: 7400000, guid: 36dfb006f142f8e4691feb5e6fee7cbf, type: 3}
-  - {fileID: 7400004, guid: ede5bbab4520d774ebcc0d52f5395b46, type: 3}
-  - {fileID: 7400000, guid: aa7e2411ec6996a42a3d953cc69f4485, type: 3}
-  - {fileID: 7400000, guid: 3c88d41c44d5529409ab177362991999, type: 3}
-  - {fileID: 7400000, guid: 5753a913fc460e245b9b953b2aebfe57, type: 3}
-  - {fileID: 7400000, guid: 7c50bf5f1151db448a3eef4608ff8682, type: 3}
-  - {fileID: 7400000, guid: c065522862bd7d049b2657de44150f54, type: 3}
-  - {fileID: 7400000, guid: 98f6314dfafc889499d36bdebd97a5e0, type: 3}
-  - {fileID: 7400000, guid: 103b55664c950794f947fb530fae912f, type: 3}
-  - {fileID: 7400000, guid: 939680dcd54189e4f9215098632e2633, type: 3}
-  - {fileID: 7400000, guid: 585530f5c0c809347a3eba24ed0c1abc, type: 3}
-  - {fileID: 7400000, guid: 619a882d86df82943b5d4acc0d959c73, type: 3}
-  - {fileID: 7400000, guid: 17dc9778aef927e449b5405d6b79a864, type: 3}
-  - {fileID: 7400000, guid: f362c7d3885444d4a8a42f561943c2ea, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9f7f829b802221742abb0ac0f7b0e63c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1635133315
 Transform:
   m_ObjectHideFlags: 0
@@ -11018,7 +10983,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1635133313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95fff7da28c9ab04c8320e1f8c42ff88, type: 3}
   m_Name: 

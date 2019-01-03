@@ -17,5 +17,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         setState.Update();
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Config.PlayerState.SetState(PlayerState.PLAYERSTATE.DIE);
+        }
     }
 }

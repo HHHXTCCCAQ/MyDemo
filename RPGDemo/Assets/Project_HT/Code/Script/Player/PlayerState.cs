@@ -20,6 +20,8 @@ public class PlayerState : MonoBehaviour {
         JUMP,
         ATTACKRUN,
         ATTACKJUMP,
+        DRAWBLADE,
+        PUTBLADE,
         ATTACK_ONE,
         ATTACK_TWO,
         ATTACK_THREE,

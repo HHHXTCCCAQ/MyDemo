@@ -26,6 +26,9 @@ public class IdleState : BaseState
                 _setState.SetNewState(new JumpState(_setState));
                 //TODO 设置状态 播放动画
                 break;
+            case PlayerState.PLAYERSTATE.DRAWBLADE:
+                _setState.SetNewState(new DrawBladeState(_setState));
+                break;
             case PlayerState.PLAYERSTATE.DIE:
                 break;
             case PlayerState.PLAYERSTATE.HIT:
@@ -38,7 +41,7 @@ public class IdleState : BaseState
     // Update is called once per frame
     public void Update()
     {
-
+        Debug.Log("c");
     }
 
 }
