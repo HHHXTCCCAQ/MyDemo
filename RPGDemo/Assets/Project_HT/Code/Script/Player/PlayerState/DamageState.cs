@@ -21,6 +21,7 @@ public class DamageState : BaseState
                 _setState.SetNewState(new AttackStandyState(_setState));
                 break;
             case PlayerState.PLAYERSTATE.DIE:
+                _setState.SetNewState(new DieState(_setState));
                 break;
             default:
                 break;

@@ -26,9 +26,11 @@ public class SkillState : BaseState
                     //TODO 播放动画
                     break;
                 case PlayerState.PLAYERSTATE.DIE:
-                    break;
+                _setState.SetNewState(new DieState(_setState));
+                break;
                 case PlayerState.PLAYERSTATE.HIT:
-                    break;
+                _setState.SetNewState(new DamageState(_setState));
+                break;
                 default:
                     break;
             }

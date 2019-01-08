@@ -23,6 +23,8 @@ public class DrawBladeState : BaseState
                 //TODO 播放动画
                 break;
             case PlayerState.PLAYERSTATE.DIE:
+                _setState.SetNewState(new DieState(_setState));
+                SetAnimation._instance.SetPlayerAnimation(Config.Die, true);
                 break;
             default:
                 break;

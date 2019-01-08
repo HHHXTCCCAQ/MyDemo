@@ -24,8 +24,10 @@ public class AttackJumpState : BaseState {
                 _setState.SetNewState(new AttackRunState(_setState));
                 break;
             case PlayerState.PLAYERSTATE.DIE:
+                _setState.SetNewState(new DieState(_setState));
                 break;
             case PlayerState.PLAYERSTATE.HIT:
+                _setState.SetNewState(new DamageState(_setState));
                 break;
             default:
                 break;
