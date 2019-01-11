@@ -64,16 +64,16 @@ ModelImporter:
     400056: //RootNode
     400058: turtle
     4300000: turtle
-    7400000: idle
-    7400002: move
-    7400004: attack1
-    7400006: attack2
+    7400000: Idle
+    7400002: Run
+    7400004: Attack1
+    7400006: Attack2
     7400008: hit1
-    7400010: hit2
-    7400012: die
+    7400010: Hit
+    7400012: Die
     7400014: swim
     7400016: ALLANIMS
-    7400018: dance
+    7400018: Dance
     11100000: //RootNode
     13700000: turtle
   externalObjects:
@@ -110,7 +110,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle
+      name: Idle
       takeName: 
       firstFrame: 1
       lastFrame: 38
@@ -138,7 +138,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: move
+      name: Run
       takeName: 
       firstFrame: 40
       lastFrame: 72
@@ -166,7 +166,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack1
+      name: Attack1
       takeName: 
       firstFrame: 76
       lastFrame: 104
@@ -194,7 +194,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack2
+      name: Attack2
       takeName: 
       firstFrame: 108
       lastFrame: 130
@@ -250,7 +250,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: hit2
+      name: Hit
       takeName: 
       firstFrame: 154
       lastFrame: 170
@@ -278,7 +278,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: die
+      name: Die
       takeName: 
       firstFrame: 174
       lastFrame: 216
@@ -362,7 +362,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: dance
+      name: Dance
       takeName: 
       firstFrame: 260
       lastFrame: 279

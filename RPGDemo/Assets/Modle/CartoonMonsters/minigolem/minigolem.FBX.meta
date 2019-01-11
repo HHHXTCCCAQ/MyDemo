@@ -110,17 +110,17 @@ ModelImporter:
     400102: //RootNode
     400104: throwDummy
     4300000: miniGolem
-    7400000: idle
-    7400002: run
-    7400004: melee1
+    7400000: Idle
+    7400002: Run
+    7400004: Attack1
     7400006: melee2
-    7400008: melee3
+    7400008: Attack2
     7400010: throw
-    7400012: hit1
+    7400012: Hit
     7400014: hit2
-    7400016: die
+    7400016: Die
     7400018: ALLANIMS
-    7400020: dance
+    7400020: Dance
     11100000: //RootNode
     13700000: miniGolem
   externalObjects:
@@ -157,7 +157,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle
+      name: Idle
       takeName: 
       firstFrame: 1
       lastFrame: 29
@@ -185,7 +185,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: run
+      name: Run
       takeName: 
       firstFrame: 31
       lastFrame: 48
@@ -213,7 +213,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: melee1
+      name: Attack1
       takeName: 
       firstFrame: 50
       lastFrame: 68
@@ -269,7 +269,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: melee3
+      name: Attack2
       takeName: 
       firstFrame: 88
       lastFrame: 106
@@ -325,7 +325,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: hit1
+      name: Hit
       takeName: 
       firstFrame: 133
       lastFrame: 148
@@ -381,7 +381,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: die
+      name: Die
       takeName: 
       firstFrame: 165
       lastFrame: 190
@@ -437,7 +437,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: dance
+      name: Dance
       takeName: 
       firstFrame: 191
       lastFrame: 235

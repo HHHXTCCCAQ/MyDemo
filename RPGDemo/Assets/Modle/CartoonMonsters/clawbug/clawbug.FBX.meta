@@ -105,16 +105,16 @@ ModelImporter:
     400098: IK Chain006
     4300000: clawbug
     7400000: ALLANIMS
-    7400002: idle
+    7400002: Idle
     7400004: idle_spec
-    7400006: move
-    7400008: attack1
-    7400010: attack2
-    7400012: hit1
+    7400006: Run
+    7400008: Attack1
+    7400010: Attack2
+    7400012: Hit
     7400014: hit2
-    7400016: die
+    7400016: Die
     7400018: cheer
-    7400020: dance
+    7400020: Dance
     11100000: //RootNode
     13700000: clawbug
   externalObjects:
@@ -179,7 +179,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: idle
+      name: Idle
       takeName: 
       firstFrame: 5
       lastFrame: 35
@@ -235,7 +235,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: move
+      name: Run
       takeName: 
       firstFrame: 130
       lastFrame: 160
@@ -263,7 +263,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack1
+      name: Attack1
       takeName: 
       firstFrame: 165
       lastFrame: 195
@@ -291,7 +291,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack2
+      name: Attack2
       takeName: 
       firstFrame: 200
       lastFrame: 230
@@ -319,7 +319,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: hit1
+      name: Hit
       takeName: 
       firstFrame: 235
       lastFrame: 255
@@ -375,7 +375,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: die
+      name: Die
       takeName: 
       firstFrame: 285
       lastFrame: 325
@@ -431,7 +431,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: dance
+      name: Dance
       takeName: 
       firstFrame: 384
       lastFrame: 406

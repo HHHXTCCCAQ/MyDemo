@@ -103,17 +103,17 @@ ModelImporter:
     400096: elemental_upperBody001
     4300000: elemental_upperBody001
     7400000: ALLANIMS
-    7400002: idle
-    7400004: move
-    7400006: punch
+    7400002: Idle
+    7400004: Run
+    7400006: Atatck1
     7400008: punch_round
-    7400010: groundStomp
+    7400010: Attack2
     7400012: idle_lookaround
-    7400014: hit1
+    7400014: Hit
     7400016: hit2
-    7400018: die
+    7400018: Die
     7400020: cast
-    7400022: dance
+    7400022: Dance
     11100000: //RootNode
     13700000: elemental_upperBody001
   externalObjects:
@@ -178,7 +178,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: idle
+      name: Idle
       takeName: 
       firstFrame: 10
       lastFrame: 49
@@ -206,7 +206,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: move
+      name: Run
       takeName: 
       firstFrame: 55
       lastFrame: 94
@@ -234,7 +234,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: punch
+      name: Atatck1
       takeName: 
       firstFrame: 100
       lastFrame: 140
@@ -290,7 +290,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: groundStomp
+      name: Attack2
       takeName: 
       firstFrame: 200
       lastFrame: 250
@@ -346,7 +346,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: hit1
+      name: Hit
       takeName: 
       firstFrame: 345
       lastFrame: 365
@@ -402,7 +402,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: die
+      name: Die
       takeName: 
       firstFrame: 395
       lastFrame: 435
@@ -458,7 +458,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: dance
+      name: Dance
       takeName: 
       firstFrame: 495
       lastFrame: 525

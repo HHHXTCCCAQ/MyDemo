@@ -74,17 +74,17 @@ ModelImporter:
     400066: IK Chain04
     400068: //RootNode
     4300000: Audrey2
-    7400000: idle
-    7400002: attack1
-    7400004: attack2
-    7400006: hit1
+    7400000: Idle
+    7400002: Attack1
+    7400004: Attack2
+    7400006: Hit
     7400008: hit2
-    7400010: move
+    7400010: Run
     7400012: taunt
     7400014: idle2
-    7400016: die
+    7400016: Die
     7400018: ALLANIMS
-    7400020: dance
+    7400020: Dance
     11100000: //RootNode
     13700000: Audrey2
   externalObjects:
@@ -126,7 +126,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle
+      name: Idle
       takeName: 
       firstFrame: 5
       lastFrame: 34
@@ -154,7 +154,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack1
+      name: Attack1
       takeName: 
       firstFrame: 40
       lastFrame: 70
@@ -182,7 +182,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack2
+      name: Attack2
       takeName: 
       firstFrame: 75
       lastFrame: 105
@@ -210,7 +210,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: hit1
+      name: Hit
       takeName: 
       firstFrame: 110
       lastFrame: 130
@@ -266,7 +266,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: move
+      name: Run
       takeName: 
       firstFrame: 160
       lastFrame: 190
@@ -350,7 +350,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: die
+      name: Die
       takeName: 
       firstFrame: 330
       lastFrame: 400
@@ -406,7 +406,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: dance
+      name: Dance
       takeName: 
       firstFrame: 410
       lastFrame: 459

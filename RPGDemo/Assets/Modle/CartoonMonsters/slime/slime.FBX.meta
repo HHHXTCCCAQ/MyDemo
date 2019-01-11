@@ -41,17 +41,17 @@ ModelImporter:
     3300000: slime_eye
     4300000: slime
     4300002: slime_eye
-    7400000: idle
-    7400002: move
-    7400004: attack1
-    7400006: attack2
+    7400000: Idle
+    7400002: Run
+    7400004: Attack1
+    7400006: Attack2
     7400008: hiphop
-    7400010: hit1
+    7400010: Hit
     7400012: hit2
-    7400014: die
-    7400016: idle2
+    7400014: Die
+    7400016: Idle
     7400018: ALLANIMS
-    7400020: dance
+    7400020: Dance
     11100000: //RootNode
     13700000: slime
   externalObjects:
@@ -88,7 +88,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle
+      name: Idle
       takeName: 
       firstFrame: 5
       lastFrame: 35
@@ -116,7 +116,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: move
+      name: Run
       takeName: 
       firstFrame: 40
       lastFrame: 70
@@ -144,7 +144,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack1
+      name: Attack1
       takeName: 
       firstFrame: 75
       lastFrame: 105
@@ -172,7 +172,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack2
+      name: Attack2
       takeName: 
       firstFrame: 110
       lastFrame: 140
@@ -228,7 +228,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: hit1
+      name: Hit
       takeName: 
       firstFrame: 200
       lastFrame: 215
@@ -284,7 +284,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: die
+      name: Die
       takeName: 
       firstFrame: 235
       lastFrame: 255
@@ -312,7 +312,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: idle2
+      name: Idle
       takeName: 
       firstFrame: 260
       lastFrame: 320
@@ -368,7 +368,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: dance
+      name: Dance
       takeName: 
       firstFrame: 325
       lastFrame: 354
