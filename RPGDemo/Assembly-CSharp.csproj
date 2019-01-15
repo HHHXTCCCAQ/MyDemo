@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Project_HT\Code\Script\Config.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Project_HT\Code\Script\Enemy\EnemyAnimation.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\FollowTarget.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\MeunScene\UISelect.cs" />
     <Compile Include="Assets\Project_HT\Code\Script\moveCamera.cs" />
