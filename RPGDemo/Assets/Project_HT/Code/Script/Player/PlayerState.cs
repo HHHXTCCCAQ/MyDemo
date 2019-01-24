@@ -27,6 +27,7 @@ public class PlayerState : MonoBehaviour {
         ATTACK_THREE,
         SKILL,
         HIT,
-        DIE
+        DIE,
+        MAX
     }   
 }

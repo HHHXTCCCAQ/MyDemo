@@ -2609,6 +2609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   attackRang: 0.5
+  Hp: 100
 --- !u!111 &382654665
 Animation:
   m_ObjectHideFlags: 0
@@ -13035,6 +13036,7 @@ GameObject:
   - component: {fileID: 1635133320}
   - component: {fileID: 1635133314}
   - component: {fileID: 1635133321}
+  - component: {fileID: 1635133322}
   m_Layer: 0
   m_Name: Player_Girl
   m_TagString: Player
@@ -13156,6 +13158,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1191b41ae48e34f4db3e13690cbade0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!143 &1635133322
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635133313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1001 &1637136688
 Prefab:
   m_ObjectHideFlags: 0
