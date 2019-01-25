@@ -7,24 +7,37 @@ using UnityEngine;
 public class FSMRunState :FSMBaseState {
 
     private Animator animator;
+    private PlayerStateContraller _playerStateContraller;
+   
 
-    public FSMRunState(Animator animator)
+    public FSMRunState(Animator animator,PlayerStateContraller playerStateContraller)
     {
         this.animator = animator;
+        _playerStateContraller = playerStateContraller;
+       
     }
 
     public override void OnEnter()
     {
-        
+        animator.SetBool(Config.Run, true);
     }
 
     public override void OnExit()
     {
-       
+        animator.SetBool(Config.Run, false);
     }
 
     public override void OnStay()
-    {      
+    {
+        if (!_playerStateContraller.move)
+        {
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.IDLE);
+        }
+        if (_playerStateContraller.jumping)
+        {
+            _playerStateContraller.jumping = !_playerStateContraller.jumping;
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.JUMP);
+        }
     }
 
 

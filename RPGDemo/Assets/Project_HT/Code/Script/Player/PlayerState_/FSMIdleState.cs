@@ -4,11 +4,12 @@ using UnityEngine;
 //Wait for me, I don't want to let you down
 //love you into disease, but no medicine can.
 //Created By HeXiaoTao
-public class FSMIdleState :FSMBaseState {
+public class FSMIdleState : FSMBaseState
+{
 
     private Animator animator;
     private PlayerStateContraller _playerStateContraller;
-    public FSMIdleState(Animator animator,PlayerStateContraller playerStateContraller)
+    public FSMIdleState(Animator animator, PlayerStateContraller playerStateContraller)
     {
         this.animator = animator;
         _playerStateContraller = playerStateContraller;
@@ -16,6 +17,7 @@ public class FSMIdleState :FSMBaseState {
 
     public override void OnEnter()
     {
+        Debug.Log("enter idle");
         animator.SetBool(Config.Idle, true);
     }
 
@@ -26,10 +28,14 @@ public class FSMIdleState :FSMBaseState {
 
     public override void OnStay()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (_playerStateContraller.move)
         {
-            animator.SetBool(Config.Run, true);
-            OnExit();
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.RUN);
+        }
+        if (_playerStateContraller.jumping)
+        {
+            _playerStateContraller.jumping = !_playerStateContraller.jumping;
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.JUMP);
         }
     }
 }

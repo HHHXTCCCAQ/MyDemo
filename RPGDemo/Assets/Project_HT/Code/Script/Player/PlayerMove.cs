@@ -8,18 +8,20 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerState))]
 public class PlayerMove : MonoBehaviour
 {
-
-
     public float MoveSpeed = 5f;
     public float RunSpeed = 10f;
-
     private PlayerState Playerstate;
     private Transform PlayerTrans;
+    private CharacterController characterController;
+    private PlayerStateContraller playerStateContraller;
+    public bool isAttack = false;
     // Use this for initialization
     void Start()
     {
         Playerstate = GetComponent<PlayerState>();
         PlayerTrans = GetComponent<Transform>();
+        characterController = this.GetComponent<CharacterController>();
+        playerStateContraller = this.GetComponent<PlayerStateContraller>();
 
     }
 
@@ -27,34 +29,36 @@ public class PlayerMove : MonoBehaviour
     void FixedUpdate()
     {
         KeyBoardMove();
-
+        Debug.Log(1);
     }
 
     public void KeyBoardMove()
     {
-        if (Input.GetKey(KeyCode.W))
+        Vector3 forward = transform.TransformDirection(Vector3.forward);//前后移动
+        float curSpeed = MoveSpeed * Input.GetAxis("Vertical");
+        characterController.SimpleMove(forward * curSpeed);
+        Vector3 v = transform.TransformDirection(Vector3.right);//左右移动
+        float vSpeed = MoveSpeed * Input.GetAxis("Horizontal");
+        characterController.SimpleMove(v * vSpeed);
+        Vector3 ve = new Vector3(-curSpeed, 0, -vSpeed);
+        
+        transform.rotation = Quaternion.LookRotation(new Vector3(-curSpeed, 0, -vSpeed));
+    }
+
+    private bool IsGround()
+    {
+        bool isGround = false;
+        Debug.DrawRay(transform.position, Vector2.down, Color.red);
+        RaycastHit hit;
+        Physics.Raycast(transform.position, Vector2.down, out hit, 0.15f, 1 << 9);
+        if (hit.collider != null)
         {
-            if (PlayerTrans != null)
-                PlayerTrans.Translate(Vector3.forward * MoveSpeed * Time.deltaTime);
-            Playerstate.SetState(PlayerState.PLAYERSTATE.WALK);
+            isGround = true;
         }
-        if (Input.GetKey(KeyCode.A))
+        else
         {
-            if (PlayerTrans != null)
-                PlayerTrans.Translate(Vector3.left * MoveSpeed * Time.deltaTime);
-            Playerstate.SetState(PlayerState.PLAYERSTATE.WALK);
+            isGround = false;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            if (PlayerTrans != null)
-                PlayerTrans.Translate(Vector3.back * MoveSpeed * Time.deltaTime);
-            Playerstate.SetState(PlayerState.PLAYERSTATE.WALK);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            if (PlayerTrans != null)
-                PlayerTrans.Translate(Vector3.right * MoveSpeed * Time.deltaTime);
-            Playerstate.SetState(PlayerState.PLAYERSTATE.WALK);
-        }
+        return isGround;
     }
 }

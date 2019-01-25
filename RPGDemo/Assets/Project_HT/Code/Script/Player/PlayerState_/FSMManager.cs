@@ -6,7 +6,7 @@ using UnityEngine;
 //Created By HeXiaoTao
 public class FSMManager{
     FSMBaseState[] fSMBaseStates;
-    private int curState=-1;
+    private int curState=0;
     private int stateIndex=-1;
     public FSMManager(int stateCount )
     {
