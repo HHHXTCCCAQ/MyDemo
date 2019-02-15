@@ -2574,7 +2574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!195 &382654663
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13089,8 +13089,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 5
-  RunSpeed: 10
   isAttack: 0
+  jumping: 0
+  move: 0
 --- !u!114 &1635133317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16766,7 +16767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2124986652
 Transform:
   m_ObjectHideFlags: 0

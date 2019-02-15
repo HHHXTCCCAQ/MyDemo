@@ -7,15 +7,19 @@ using UnityEngine;
 public class FSMCommboTwo : FSMBaseState {
 
     private Animator animator;
-
-    public FSMCommboTwo(Animator animator)
+    private float stayTime = 0;
+    private float stayMax = 0.5f;
+    private PlayerStateContraller _playerStateContraller;
+    public FSMCommboTwo(Animator animator, PlayerStateContraller playerStateContraller)
     {
         this.animator = animator;
+        _playerStateContraller = playerStateContraller;
     }
 
     public override void OnEnter()
     {
-
+        Debug.Log(123);
+        animator.SetTrigger(Config.Attack);
     }
 
     public override void OnExit()
@@ -25,5 +29,18 @@ public class FSMCommboTwo : FSMBaseState {
 
     public override void OnStay()
     {
+        stayTime += Time.deltaTime;
+        if (stayTime > stayMax)
+        {
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.ATTACKSTANDY);
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                Debug.Log(13);
+                _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.ATTACK_THREE);
+            }
+        }
     }
 }

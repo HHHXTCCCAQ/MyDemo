@@ -7,23 +7,39 @@ using UnityEngine;
 public class FSMAttackStandyState : FSMBaseState {
 
     private Animator animator;
-
-    public FSMAttackStandyState(Animator animator)
+    private PlayerStateContraller _playerStateContraller;
+    public FSMAttackStandyState(Animator animator,PlayerStateContraller playerStateContraller)
     {
         this.animator = animator;
+        _playerStateContraller = playerStateContraller;
     }
 
     public override void OnEnter()
     {
-
+        Debug.Log("Enter attack standy");
+        animator.SetBool(Config.AttackStandy, true);
     }
 
     public override void OnExit()
     {
-
+        animator.SetBool(Config.AttackStandy, false);
     }
 
     public override void OnStay()
     {
+        if (_playerStateContraller.move)
+        {
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.ATTACKRUN);
+        }
+        if (_playerStateContraller.jumping)
+        {
+            _playerStateContraller.jumping = !_playerStateContraller.jumping;
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.ATTACKJUMP);
+        }
+        if (_playerStateContraller.attack)
+        {
+            _playerStateContraller.attack = !_playerStateContraller.attack;
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.ATTACK_ONE);
+        }
     }
 }

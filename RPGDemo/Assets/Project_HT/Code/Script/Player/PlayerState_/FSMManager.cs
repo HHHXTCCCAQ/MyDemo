@@ -35,11 +35,11 @@ public class FSMManager{
     {
         if (state > fSMBaseStates.Length - 1 || state == stateIndex)
             return;
-
         if (stateIndex != -1)
             fSMBaseStates[stateIndex].OnExit();
         stateIndex = state;
         fSMBaseStates[stateIndex].OnEnter();
+
     }
     /// <summary>
     /// Update  
