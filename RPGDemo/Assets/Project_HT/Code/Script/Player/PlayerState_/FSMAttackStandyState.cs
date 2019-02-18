@@ -41,5 +41,14 @@ public class FSMAttackStandyState : FSMBaseState {
             _playerStateContraller.attack = !_playerStateContraller.attack;
             _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.ATTACK_ONE);
         }
+        if (_playerStateContraller.skill)
+        {
+            _playerStateContraller.skill = !_playerStateContraller.skill;
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.SKILL);
+        }
+        if (!_playerStateContraller.drawBlade)
+        {
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.PUTBLADE);
+        }
     }
 }

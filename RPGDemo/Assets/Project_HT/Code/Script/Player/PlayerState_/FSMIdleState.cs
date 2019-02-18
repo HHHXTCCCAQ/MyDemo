@@ -37,5 +37,9 @@ public class FSMIdleState : FSMBaseState
             _playerStateContraller.jumping = !_playerStateContraller.jumping;
             _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.JUMP);
         }
+        if (_playerStateContraller.drawBlade)
+        {
+            _playerStateContraller.ChangeState((int)PlayerStateContraller.TURNSTATE.DRAWBLADE);
+        }
     }
 }

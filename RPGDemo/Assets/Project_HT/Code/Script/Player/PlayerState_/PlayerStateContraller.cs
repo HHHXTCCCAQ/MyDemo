@@ -19,10 +19,9 @@ public class PlayerStateContraller : MonoBehaviour
         ATTACK_ONE,
         ATTACK_TWO,
         ATTACK_THREE,
-        WALK,                            
         SKILL,
-        HIT,
-        DIE,
+        DIE,                                 
+        HIT,       
         MAX
     }
     private Animator _playerAnimator;
@@ -35,6 +34,8 @@ public class PlayerStateContraller : MonoBehaviour
     [HideInInspector] public bool jumping = false;
     [HideInInspector] public bool move = false;
     [HideInInspector] public bool attack = false;
+    [HideInInspector] public bool skill = false;
+    [HideInInspector] public bool drawBlade = false;
     // Use this for initialization
     void Start()
     {
@@ -50,6 +51,7 @@ public class PlayerStateContraller : MonoBehaviour
     }
     void Init()
     {
+        drawBlade = false;
         fSMManager = new FSMManager((int)TURNSTATE.MAX);
         FSMIdleState idleState = new FSMIdleState(_playerAnimator, this);
         fSMManager.AddState(idleState);
@@ -73,6 +75,10 @@ public class PlayerStateContraller : MonoBehaviour
         fSMManager.AddState(commboTwo);
         FSMCommboThree commboThree = new FSMCommboThree(_playerAnimator, this);
         fSMManager.AddState(commboThree);
+        FSMSkillState skillState = new FSMSkillState(_playerAnimator, this);
+        fSMManager.AddState(skillState);
+        FSMDeathState dieState = new FSMDeathState(_playerAnimator, this);
+        fSMManager.AddState(dieState);
     }
     // Update is called once per frame
     void Update()
@@ -117,18 +123,5 @@ public class PlayerStateContraller : MonoBehaviour
         {
             move = false;
         }
-
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            fSMManager.ChangeState((int)TURNSTATE.DRAWBLADE);
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            fSMManager.ChangeState((int)TURNSTATE.PUTBLADE);
-        }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            attack = true;
-        }
-    }
+    }   
 }

@@ -10,11 +10,14 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
     public float attackRang;
+    public float reviveRang;//唤醒距离
+    public float CritChance;//暴击几率
     public float Hp = 100;
     private float distanceToPlayer;
     private Animation enemyAnimation;
     private Transform taget;
     private NavMeshAgent agent;
+    private PlayerStateContraller playerStateContraller;
     private bool isWalk;
     // Use this for initialization
     void Start()
@@ -23,7 +26,8 @@ public class Enemy : MonoBehaviour
         taget = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;
-        agent.SetDestination(taget.position);
+        playerStateContraller = taget.GetComponent<PlayerStateContraller>();
+        //agent.SetDestination(taget.position);
     }
 
     // Update is called once per frame
@@ -37,14 +41,27 @@ public class Enemy : MonoBehaviour
         EnemyAnimationPlayer();
     }
 
-
+    public float randomValue = 0;
     public void EnemyAnimationPlayer()
     {
         if (Hp <= 0)
             return;
-        if (distanceToPlayer > attackRang)
+
+        if (distanceToPlayer > reviveRang)
+        {
+            enemyAnimation.Play(Config.Idle);
+            if (playerStateContraller.drawBlade == true)
+            {
+                playerStateContraller.drawBlade = false;
+            }
+        }
+        else if (reviveRang > distanceToPlayer && distanceToPlayer > attackRang)
         {
             isWalk = true;
+            if (playerStateContraller.drawBlade == false)
+            {
+                playerStateContraller.drawBlade = true;
+            }
             enemyAnimation.Play(Config.Run);
             agent.SetDestination(taget.position);
         }
@@ -52,7 +69,17 @@ public class Enemy : MonoBehaviour
         {
             //进入攻击状态
             isWalk = false;
-            enemyAnimation.Stop(Config.Run); 
+            enemyAnimation.Stop(Config.Run);
+            randomValue = Random.Range(0, 100);
+            if(randomValue/100<= CritChance)
+            {              
+                enemyAnimation.PlayQueued(Config.Attack2);
+            }
+            else
+            {
+                enemyAnimation.PlayQueued(Config.Attack1);
+            }
+            
         }
     }
 }

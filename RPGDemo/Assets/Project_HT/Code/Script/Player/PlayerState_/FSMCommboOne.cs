@@ -18,6 +18,7 @@ public class FSMCommboOne : FSMBaseState {
 
     public override void OnEnter()
     {
+        stayTime = 0f;
         animator.SetTrigger(Config.Attack);
     }
 
